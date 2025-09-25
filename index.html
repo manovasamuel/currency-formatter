@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="C-container">
+      <div class="t-section">
+        <h1 class="t-head">Currency Formatter</h1>
+        <div class="search-container">
+          <input type="number" class="t-box" placeholder="ENTER YOUR AMOUNT" />
+
+          <button class="C-btn">Convert</button>
+          <button class="R-btn">Reset</button>
+        </div>
+
+        <div class="currency-container">
+          <div class="from-container">
+            <label for="fromCur">From:</label>
+            <select id="fromCur" class="form-control" name="currency">
+              <option value="">Select One …</option>
+              <option value="USD">USD</option>
+              <option value="AED">AED</option>
+              <option value="CNY">CNY</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+              <option value="INR">INR</option>
+              <option value="JPY">JPY</option>
+              <option value="RUB">RUB</option>
+            </select>
+          </div>
+          <div class="to-container">
+            <label for="toCur">To:</label>
+            <select id="toCur" class="form-control" name="currency">
+              <option value="">Select One …</option>
+              <option value="USD">USD</option>
+              <option value="AED">AED</option>
+              <option value="CNY">CNY</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+              <option value="INR">INR</option>
+              <option value="JPY">JPY</option>
+              <option value="RUB">RUB</option>
+            </select>
+          </div>
+        </div>
+        <h2 class="result-title">
+          Converted Amount :
+          <span class="finalValue"> </span>
+        </h2>
+      </div>
+    </div>
+  </body>
+</html>

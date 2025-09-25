@@ -1,0 +1,161 @@
+:root {
+  --color-primary: #5ec576;
+  --color-secondary: #ffcb03;
+  --color-tertiary: #ff585f;
+  --color-primary-darker: #4bbb7d;
+  --color-secondary-darker: #ffbb00;
+  --color-tertiary-darker: #fd424b;
+  --color-primary-opacity: #5ec5763a;
+  --color-secondary-opacity: #ffcd0331;
+  --color-tertiary-opacity: #ff58602d;
+  --gradient-primary: linear-gradient(to top left, #46b47f, #adffc3);
+  --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+  --gradient-tertiary: linear-gradient(to top left, #ff585f, #ff8a8f);
+}
+
+body {
+  font-family: sans-serif;
+
+  background: radial-gradient(
+      ellipse at 20% 30%,
+      #f7f3d6 0%,
+      #ffe066 10%,
+      transparent 30%
+    ),
+    radial-gradient(
+      ellipse at 70% 20%,
+      #b3c6e7 0%,
+      #6a8edb 15%,
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 60% 80%,
+      #f7f3d6 0%,
+      #ffe066 10%,
+      transparent 30%
+    ),
+    radial-gradient(
+      ellipse at 80% 60%,
+      #b3c6e7 0%,
+      #6a8edb 15%,
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 40% 60%,
+      #ffe066 0%,
+      #f7f3d6 10%,
+      transparent 30%
+    ),
+    repeating-linear-gradient(
+      120deg,
+      #232d3a 0px,
+      #232d3a 40px,
+      #1a1a2e 60px,
+      #232d3a 100px
+    ),
+    radial-gradient(circle at 60% 30%, #ffe066 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, #6a8edb 0%, transparent 50%),
+    repeating-radial-gradient(
+      circle at 50% 50%,
+      #232d3a 0px,
+      #232d3a 10px,
+      transparent 20px
+    );
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.C-container {
+  background-image: var(--gradient-primary);
+  border: 3px solid black;
+  width: 50%;
+  border-radius: 15px;
+  padding: 88px;
+  box-shadow: 8px 8px grey;
+}
+.search-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+}
+.t-box {
+  font-size: 22px;
+  border-radius: 8px;
+  border: 3px solid black;
+  padding: 12px;
+}
+.C-btn,
+.R-btn {
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #20b2aa;
+  border-radius: 8px;
+  border: 0px;
+  /* box-shadow: 4px 4px white; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.C-btn:hover,
+.R-btn:hover {
+  background-color: #3ee0d0;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+label {
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  background-image: var(--gradient-secondary);
+  height: 40px;
+  width: fit-content;
+  border-radius: 8px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+  padding: 12px;
+}
+
+.form-control {
+  font-family: sans-serif;
+  border-radius: 8px;
+  border: 2px solid black;
+  padding: 12px;
+  font-size: 22px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Prevent text wrapping in select options */
+.form-control option {
+  white-space: nowrap;
+}
+.currency-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 45px;
+}
+
+.result-title {
+  text-align: center;
+  font-size: 44px;
+  margin-top: 30px;
+}
+.finalValue {
+  text-align: center;
+  color: var(--color-tertiary);
+  font-size: 32px;
+  font-weight: bold;
+}
